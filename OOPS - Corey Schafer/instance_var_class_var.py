@@ -1,12 +1,14 @@
 
 class Employee:
     raise_amount = 1.04 #Class Variable
+    number_of_emps = 0
 
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
         self.email = first + '.' + last + '@email.com'
         self.pay = pay
+        self.number_of_emps += 1
 
         '''Methods: These are functions associated with a class created to perform actions on instance data. 
            full_name method returns the full name of the employee'''
@@ -31,4 +33,5 @@ emp_2 = Employee('V', 'K', 1200000)
 # print(emp_1.pay)
 # print(emp_1.__dict__)
 # print(emp_2.__dict__)
-print(Employee.__dict__)
+# print(Employee.__dict__)
+# print(emp_1.__getattribute__)
