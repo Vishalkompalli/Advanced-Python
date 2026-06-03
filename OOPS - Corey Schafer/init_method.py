@@ -14,7 +14,7 @@ class Employee:
         self.email = first + '.' + last + '@email.com'
         self.pay = pay
 
-        '''Methods: These are functions associated with a class created to perform actions on instance data. 
+        '''Methods: These are functions associated with a class, created to perform actions on the instance data. 
            full_name method returns the full name of the employee'''
 
     def fullname(self):  
