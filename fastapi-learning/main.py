@@ -68,3 +68,17 @@ def get_posts(limit: int = 10, search: str = ""):
             filtered_posts.append(post)
     return filtered_posts[:limit]
 
+movies = [{"id" : 1, "genre" : "Action"},
+          {"id" : 2, "genre" : "Horror"},
+          {"id" : 3, "genre" : "Thriller"},
+          {"id" : 4, "genre" : "Romance"}
+]
+
+@app.get("/movies")
+def get_movies(limit: int = 10, genre: str = "",year: int = 0):
+    filtered_movies = []
+
+    for movie in movies:
+        if genre.lower() in movie["genre"].lower():
+            filtered_movies.append(movie)
+    return filtered_movies[:limit]
