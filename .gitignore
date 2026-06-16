@@ -1,3 +1,5 @@
 .vscode/
 fastapi_venv/
 __pycache__/
+library.py
+library.txt
