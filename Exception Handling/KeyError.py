@@ -11,7 +11,7 @@ while True:
         result = movies_lower[movie_name]        
 
     except:
-        KeyError
+        KeyError # type: ignore
         print("No such movie exists in my data you dumbass, enter a valid one.")
 
     else:
